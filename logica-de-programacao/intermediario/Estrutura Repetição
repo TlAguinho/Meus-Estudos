@@ -1,0 +1,100 @@
+Estrutura de Repetição > Enquanto/FImEnquanto:
+
+-Enquanto, vai permitir que execute um bloco(Ação) de comandos várias vezes; <!-- Looping --> 
+-Na execução do programa, o teste lógico é feito no início.
+
+	Exemplo¹:<Enquanto (NÃO ARRUMAR O QUARTO)> <faça>
+				(Castigo)
+				<!-- (Quarto arrumado) -->
+			<FimEnquanto>
+			 	Liberado!
+
+	Enquanto minha expressão for = NÃO ARRUMAR O QUARTO, repita, estou de CASTIGO, quando minha EXPRESSÃO for = QUARTO ARRUMADO, o enquanto encerrará e partirá para o próximo comando, que no caso seria LIBERADO;
+
+	Exemplo²:<Enquanto> ( X <= 10 ) <faça>
+				X <- X + 1
+			 <FimEnquanto>
+			 "Terminei de contar!"
+
+	Enquanto X (X = Variável, dentro da expressão) for MENOR ou IGUAL a 10, execute minha ação (comando de conta para contar até 10), enquanto X não for IGUAL a 10 = Repita, quando X for IGUAL a 10, o enquanto encerrará e partirá para o próximo comando, que no caso seria "Terminei de Contar!"
+
+
+
+	SINTAXE:<Enquanto (Expressão)> <faça>
+				Bloco
+			<FimEnquanto>
+
+	<Enquanto()> = Comando;
+	<Faça> = Comando;
+	<FimEnqaunto> = Comando;
+	<Expressão> = Operação Matemáticas/lógica;
+	<!-- Operadores são Símbolos < (maior) / > (menor) / = (igual)/ <> (diferente) que representam operaçãoes mátematica -->
+	<!-- Ex: ( X <= 5 ) -->
+	<Bloco()> = "Interação", AÇÃO; <!-- Comando que vai ser execultado  -->
+	<!-- Pensar sempre na ação (Equação) que devo fazer para completar tal tarefa, problema... -->
+	<!-- Sempre que for acrescentar/adicionar alguma coisa, deixar sempre ação por último?  -->
+
+
+============================================================================
+
+Estrutura de Repetição - Repita/Até:
+
+-Repita/Até, vai permitir que execulte um Bloco() de comandos várias vezes;
+-Na execução do programa com repita, o teste lógico é feito no final (Expressão);
+
+	Exemplo¹: <Repita>
+				Contador <- Contador + 1
+			  <Até> (Contador >= 5)
+
+Utilizando repita, nota-se a diferença logo na estrutura do comando, diferente do enquanto, que a expressão é testada logo no início do comando, no repita, o teste lógico é feito apenas no final, isso é, que o comando/programa vai executar, porém só ira dar erro quando chegar no ATÉ (Comando) e verificar se minha EXPRESSÃO é VERDADEIRA ou FALSA.
+
+No exemplo¹, o repita acontece até que meu contador seja MAIOR ou IGUAL a 5, até ele não ser, minha ação se repitirá várias vezes, até que finalmente meu contador seja IGUAL ou MAIOR que 5.
+
+	Exemplo²: <Repita>
+
+			  <Até> ()
+
+	SINTAXE: <Repita>
+				Bloco()
+			  <Até ()>
+
+	<Repita> = Comando;
+	<Bloco()> = Ação; <!-- Pensar sempre na ação (Equação) que devo fazer para completar tal tarefa, problema... -->
+					  <!-- Sempre que for acrescentar/adicionar alguma coisa, deixar sempre ação por último?  -->
+	<Até ()> = Comando/Espressão ();
+
+============================================================================
+
+Estrutra de Repetição - Para/FimPara
+
+Para, é uma estrutura de repetição com variável, que permine que execute o bloco interno uma quantidade de vezes determinada, isto é, não conseguimos usar para uma quantidade de vezes infinitas ou quantas o usuário quiser, e sim, apenas de um íncio até o fim.
+
+	Exemplo¹: <Para> Contador <- 1 <Até> 10 <Passo> 1 <Faca>
+				Escreval(Contador)
+		  <FimPara>
+
+	Nota-se, que diferente do REPITA e ENQUANTO, não atribuimos (Contador <- Contador + 1), pois no PARA, temos o PASSO, o que sempre vai ser 1 e representa essa atribuição que fazemos nos comandos ENQUANTO/REPITA (JÁ VEM ATRIBUIDO), e a quantidade de vezes, lopping, ela é data através do INÍCIO e FIM, ou seja, de 1 (início) até 10 (fim), o programa vai realizar 10 vezes a mesma ação até que o PARA seja fim (10). 
+
+	Importante! Não é possível usar para uma quantidade de vezes indeterminada, sem ínicio ou fim, é necessário que tenha.
+
+	Exemplo²: <Para> Contador <- 1 <Até> 5 <Passo> (Opcional [2]) <Faca>
+				Escreval(Contador) 
+			  <FimPara>
+
+	Neste exemplo, Contador vai de 1 até 5, recebendo passo 2, isto é, ele vai saltar de 2 em 2. Resultado: 1, 3, 5. Nota-se que ele não repetiu 5 vezes, ele não foi de 1 até 5 (início ao fim) e sim, quando contador recebeu 5 e sua contagem era até 5, ele encerrou a execução, ou seja, quando a variável atinge o valor FIM, o PARA é encerrado.
+
+	Sintaxe: <Para> Variável <- Início <ATÉ> Fim <Passo> 1 <Faca>
+				Bloco(A)
+		 	 <FimPara>
+
+	<Para> = Comando;
+	<Até> = Comando; <!-- Início / fim -->
+	<Passo> = Comando; <!-- Opcional, o passo sempre vai ser 1, é necessário colocar se o passo for mais do que 1 (2, 3...) -->
+	<Faca> = Comando;
+	<FimPara> = Comando;
+	<Bloco()> = Ação; <!-- Em para, vai ser o que aparece na tela -->
+
+	<INÍCIO> = Começo, de onde partirá;
+	<FIM> = Quando o resultado (VERDADEIRO) for o valor/número digitado na estrutra, ele se encerrará; <!-- 1 até 5: 1, 2, 3, 4, 5. --> 
+    <!-- Saltando de 2 em 2: 1, 3, 5. -->
+

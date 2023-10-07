@@ -1,0 +1,19 @@
+OPERADORES LÓGICOS:
+
+    -Da mesma maneira que os operadores relacionais, os operadores lógicos também retornam um valor final lógico, Mas não servem pra comparar resultados
+    de expressões ou números, Eles apenas servem para comprar outros resultados lógicos.
+
+    Operador E = Só retornará VERDADEIRO, se X e Y estiverem de acordo com o solciitado. 
+    Ex: Quero que Tiago "E" Fernanda, estejam felizes. Tiago = Feliz / Fernanda = Feliz. Resultado = VERDADEIRO;
+                                                       Tiago = Feliz / Fernanda = Triste. Resultado = FALSO;
+    Obs.: Resultado FALSO acontece, quando X E Y, não estão de acordo, conforme solicitado, apenas um feliz e o outro não. V c/ F = F. O Resultado
+    VERDADEIRO acontece se ambos estiverem de acordo, é necessário sempre que ambos, X e Y estejam de acordo (Feliz/Feliz);
+    
+    Operador OU = Só retornará FALSO, se X ou Y não estiverem de acordo com o solicitado.
+    Ex: Quero que Tiago "OU" Fernanda, estejam felizes. Tiago = Feliz / Fernanda = Triste. Resultado = VERDADEIRO;
+                                                        Tiago = Triste / Fernanda = Triste. Resultado = FALSO;
+    Obs.: Resultado VERDADEIRO, acontece sempre que X ou Y, estiverem de acordo com o solicitado, se ambos não estiverem de acordo, resultado serÁ
+    FALSO;
+
+    Operador NAO = Muda o valor do resultado lógico, se for VERDADEIRO > FALSO | se for FALSO > VERDADEIRO; (INVERSÃO DO RESULTADO LÓGICO)
+    Ex: Se X é VERDADEIRO, Não X é FALSO. | Se Y é FALSO, Não Y é VERDADEIRO;

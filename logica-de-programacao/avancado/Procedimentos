@@ -1,0 +1,108 @@
+<PROCEDIMENTOS:>
+
+	-São passo-a-passo que devem ser seguidos para realizar uma tarefa, um bom exemplo, é algo que fazemos na nossa ROTINA, como por exemplo "Preparar o  Café", "existe" ou podemos criar um PROCEDIMENTO e damos um nome a ele (EX: <Coffe()>), que vai executar este procedimento da minha rotina (Preparar o Café) e toda vez que precisa executar aquela quantidade de passos do procedimento, não preciso escrever todo procedimento novamente, e sim, basta chamar pelo nome dado ao procedimento <Coffe()>, e assim, irá preparar nosso café quantas vezes repetirmos.
+
+	Sempre que tiver um procedimento repetitivo, o que vamos chamar de "ROTINA", basta escrevê-lo uma vez só dentro de um procedimento, e aí, toda vez que precisar dele é só fazer uma chamada através do nome dado ao procedimento. (EX: <COFFE()>)
+
+	Dentro do procedimento, é possível criar variáveis locais; <!-- Pode ter o mesmo nome da variável global, o programa (linguagem de programação) sabe diferenciar uma da outra -->
+
+	Sintaxe (Procedimento): <Procedimento Nome()>
+							<Var>
+			 				<Inicio>
+			 				(Aqui vai o Passo-A-Passo de todo meu procedimento)
+			 				<FimProcedimento>
+________________________________________________________________________________________________________________________
+	PASSAGEM DE PARÂMETRO - 1° TIPO = POR VALOR:
+
+	É possível pedir alguns procedimentos passando por parâmetro, como por exemplo a soma de dois números ( 5 + 3 ), 5 e 3 foram os parâmetros que passei para uma soma dos valores.
+
+	Parâmetro,...
+
+	Exemplo¹: <Algoritmo>"SomaDeDoisValoresPorParametros"
+
+			  <Var> X, Y: Inteiro <!-- Variáveis Globais -->
+
+			  <Procedimento> Soma(A,B: Inteiro)  
+			  <Inicio>
+			  	Escreval("Recebi o valor", A)
+			  	Escreval("Recebi o valor", B)
+			  	Escreval("A soma vale" A+B)
+			  <FimProcedimento> <!-- Meu procedimento de Soma -->
+
+			  <Incio> <!-- Incio do meu programa -->
+
+			  	X <- 5
+			  	Y <- 3
+			  	Soma(X, Y)
+
+			  <FimAlgoritmo> <!-- Fim do meu programa -->
+
+
+	Nota-se que as variáveis globais estão sendo passadas como parâmetros ao chamar procedimento "Soma(X, Y)", chamando o procedimento, eles vão ter novos parâmetros A e B, A (X = 5) e o B (Y = 3), isso é, porque fiz uma chamada do meu procedimento e passando por parâmetros, X e Y, então em seguida, o A vai está valendo 5 (que é o valor de X) e o B valendo 3 (Que é o valor de Y)
+
+	Obs.: A e B, não são bem variáveis, são parâmetros das variáveis globais;
+		  A e B, são tratados como variáveis, mas por serem passados para um procedimento, são chamados de parâmetros;
+
+	Exemplo²:  <Algoritmo>"ParOuImparProcedimento"
+
+			  <Var> N: Inteiro <!-- Variáveis Globais -->
+
+			  <Procedimento> ParOuImpar(V: Inteiro)
+			  <Inicio>
+			  		
+			  		Se (V%2 = 0) entao
+			  			Escreval("O número ", V, " é PAR")
+			  		Senao
+			  			Escreval("O número ", V, " é IMPAR")
+			  		FimSe
+
+			  <FimProcedimento> <!-- Meu procedimento de Soma -->
+
+			  <Incio> <!-- Incio do meu programa -->
+			  		
+			  		Escreva("Digite um número: ")
+			  		Leia(N)
+			  		ParOuImpar(N) <!-- Procedimento por parametro (1°), nome do procedimento (ParOuImpar) -->
+
+			  <FimAlgoritmo> <!-- Fim do meu programa -->
+
+	Obs.: Nota-se que não usou o nome para nomear variável, como nome dentro de parâmetros; <!-- É possível em algumas linguagem de programação -->
+
+	<Importante!: Procedimentos por parâmetros do tipo VALOR, é quando a variável que declaramos no nosso programa, ela é passada para o nosso procedimento com outro nome e o valor da variável (digitado pelo usuário ou especificado) é atribuido aquele parâmetro do procedimento.>
+
+	Sintaxe: <Procedimento Nome(A, B)> <!-- A e B, são as variáveis globais, que quando chamadas em procedimentos, são chamadas de parâmetros -->
+			 <Inicio>
+			 (Aqui vai o Passo-A-Passo de todo meu procedimento)
+			 <FimProcedimento>
+_________________________________________________________________________________________________________________________
+	PASSAEGEM DE PARÂMETROS - 2° TIPO = REFERÊNCIA:
+
+	Segue o mesmo conceito do parâmetro por VALOR, mas agora acrescentamos a palavra VAR, isto é, VAR não quer dizer que está declarando uma variável, e sim, quer dizer que está passando parâmetro por referência.
+
+	Exemplo¹: <Var> <!-- Não declarado -->
+			  <Procedimento> Soma(var A, B: Inteiro) 
+			  <Inicio>
+			  A <- A + 1
+			  B <- B + 2
+			  Escreval("A soma vale", A+B)
+			  <FimProcedimento>
+
+			  <Inicio> <!-- Início do programa -->
+
+			  	X <- 4 
+			  	Y <- 8
+			  	Soma(X, Y)
+			  	Escreval(X, Y)
+
+			  <FimAlgoritmo> <!-- Fim do programa -->
+
+	Quando eu chamar o procedimento Soma(X, Y), será passado o endereço de X para dentro do endereço A, e o endereço de Y, para dentro do endereço B <!-- ("anteriormente o valor de X era jogado para A, e o valor de Y era jogado para B") -->, isto é, como coloquei VAR no incio, eu não passo o valor de X e o de Y, eu passo a referência de X e Y, ou seja, quando eu somar +1 no A, automaticamente vai ser somado +1 no X, que valia 4 e agora vale 5, quando somar +2 no B, autoaticamente vai ser somando +2 no Y, que valia 8 e agora vale 10, e mostrando o valor no final, as variáveis globais vão ser mostradas 5 e 10, e não, 4 e 8. (Qualquer alteração no parâmetro passado por referência, no final vai afetar a variável global, ou seja, passará o valor do procedimento realizado)
+
+_________________________________________________________________________________________________________________________
+
+	ESCOPO:
+
+	-É o local onde uma determinada variável(parâmetro) vai funcionar; <!-- Procedimento -->
+	-Variáveis/Parâmetros locais, não serão executados no meu programa, e sim, apenas no local onde foram determinadas (Escopo local);
+	-Váriáveis (Global), vão ser executadas no meu programa, já que foram definadas no Escopo Global do meu programa;
+

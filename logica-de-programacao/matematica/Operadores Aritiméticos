@@ -1,0 +1,12 @@
+OPERADORES ARITMÉTICOS:
+    
+    A <- 5
+    B <- 2
+    
+    + = Adição; (A+B = 7) 
+    - = Subtração; (A-B = 3)
+    * = Multiplicação; (A*B = 10)
+    / = Divisão; (A/B = 2.5)
+    \ = Divisão Inteira; (A\2 = 2 Obs.: Só me mostra o valor inteiro do resultado.)
+    ^ = Exponenciação; (A^2 = 25 Obs.: 5 elevado a 2 ou 5 x 5, sempre vai ser a repetição do n° x a quantidade elevada)
+    % = Módulo; (A%B = 1 Obs.: Resto da divisão)

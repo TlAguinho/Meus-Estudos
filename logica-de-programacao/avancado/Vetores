@@ -1,0 +1,50 @@
+<VETORES (VARIÁVEIS COMPOSTAS HOMOGÊNEAS UNIDIMENSONAIS):>
+
+	-Uma variável declarada com vetor, é possível guardar vários valores em uma única variável, deixando assim de ser uma variável simples, capas de guardar apenas 1 valor, e passa ser uma variável composta, capas de armanezar vários valores para uma única variável;
+
+	-Composta, quer dizer que é composto de vários espaços, e dentro de cada espaço você consegue guardar um valor; <!-- [1][2][3][4] -->
+
+	-Homogêneas, quer dizer que as variáveis(vetor) são todas do mesmo tipo, ou seja, são todas do tipo INTEIRO, REAL, LÓGICO e etc, sempre apenas um tipo de primitivo data a variável; <!--  -->
+
+	-Unidimensionais, quer dizer que para identificar cada um dos espaços, quadradinhos, eu preciso apenas de um endereço, por exemplo, 2° posição de N, é o N[2]; <!-- Vetores -->
+
+	-Não é preciso apagar o valor anterior para colocar um novo, eu posso guardar vários valores dentro de uma mesmo variável, é como se fosse salvar dados, só que fica na memória do computador; <!-- Para adicionar mais espaço, é só alterar em vetor, ex: [1..4] > [1..10] (Alterado) -->
+
+	Sintaxe: <Var>
+				
+				<N: vetor[1..4] de inteiro> <!-- Isto é, a variável N, agora ela tem 4 espaços para armazenar dados/valores -->		
+
+				Aqui mostramos como é a estrutura de uma variável composta (vetor), dando 1° nome a variável, neste caso foi <N>, depois chamando <VETOR> juntamente com <CONCHETES> e dentro dos CONCHETES, é declarado quantos espaços vamos ter na variável N, sendo de 1 até o valor que desejar ou software, ou problema para ser resolvido, necessitar [1..4] = As posições, e por fim, e juntamente com "DE" o tipo primitivo da variável composta (Inteiro, Real, Caractere e etc). 
+						
+			<Inicio>
+
+				N[1] <- 3 
+				N[2] <- 5
+				N[3] <- 1
+				N[4] <- 0
+
+				Aqui estou mostrando como colocar os valores em cada posição do meu vetor, dizendo que a variável N, na posição, declarada dentro de [], vai receeber O valor especificado, exemplo na posição 1 do meu vetor, vai ser armanezado o valor 3 e assim por diante; 			| 3 | 5 | 1 | 0 |
+
+				Então é assim que funciona com esse tipo de variável, eu tenho que indicar o nome dela (neste caso foi <N>) e depois vetor, e entre colchetes, eu preciso colocar o que chamamos de índice, que a posição, endereço dentro da variável;
+
+			<FimAlgoritimo>
+
+
+	Exemplo¹: <Var>
+
+				<N:> vetor[1..4] de inteiro
+				<I:> inteiro
+
+			  <Inicio>
+			  	<Para> I <- 1 até 4 faça
+			  		<Escreva>("Digite o " , I, "o. valor: ")
+			  		<Leia(N[I])>
+			  	<FimPara>
+
+	-Para exemplificar vamos declarar uma variável homogênea unidimensonal (novamente N) com 4 espaços, que damos o nome de VETOR (VETORES), e uma variável simples  (I) que é do tipo inteiro, no corpo do meu programa, posso criar um PARA de 1 até 4, que são as posições do meu VETOR, e fazer um leia N na posição I, esse I vai ser substitituído pelo valor da variável que está no laço, então eu vou digitar um número porque tem um LEIA N (minha variável composta) no início quando o para começa o I recebe 1, então a variável I está com o valor 1, e o que o usuário digitar, vai ser colocado dentro da variável N na posição 1°. 
+
+	-Ou seja, ao invés de colocar os valores de cada posição atribuindo de forma simples, colocando N[1], vamos usar a estrutura de repetição (looping) -> PARA, onde a minha variável I, vai representar o n° das posições da minha variável composta, isto é, o I se inicia com 1, quando I for 1, vamos estar armazenando os dados na posição 1 da minha variável N, quando o looping recomeçar, I que já está valendo 1, vai receber +1 e valerá 2, e quando novamente pedir para o usuário digitar o valor, vamos guardar na posição 2° da minha variável N e assim por diante.
+
+
+	<IMPORTANTE!: ....>
+

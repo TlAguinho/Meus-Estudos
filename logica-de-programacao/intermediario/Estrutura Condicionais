@@ -1,0 +1,144 @@
+<ESTRUTURAS-CONDICIONAIS:>
+
+    × CONDICIONAL (<SIMPLES>):
+
+    -Condição Simples, é quando algo ocorre, SE for de acordo com o que esperavamos.
+    
+    Exemplo¹:
+
+    <Se> (Dinheiro >= 1000 ) <Então>
+        Escreva("Partiu Disney!")
+    <FimSe>
+
+    <R:> Nota-se que apenas uma expressão está acontecendo, SE o dinheiro for IGUAL ou MAIOR que R$ 1.000,00 reais, vamos viajar, "Partiu Disney!"
+
+    Sintaxe: <Se (Expressão)> <Então>
+                Bloco ()
+             <FimSe>
+
+    <Se> = Comando;
+    <Expressão> = Operação Matemática ou Lógica; <!-- Operação Mátematica (Contas) / Lógica (Resultado Verdadeiro) -->
+    <Então> = Comando;
+    <Bloco()> = Ação; <!-- É como vou resolver tal tarefa ou problema -->
+                      <!-- Sempre que for acrescentar/adicionar alguma coisa, deixar sempre ação por último?  -->
+    <FimSe> = Comando;
+
+======================================================================================================================================================
+
+    × CONDICIONAL (<COMPOSTA>):
+
+    -Condição Composta, é quando ocorre duas situações são impostas; <!-- "Então uma, senão outra" -->
+
+    Exemplo¹:
+
+    <Se> (Dinheiro >= 1000) <Então>
+        Escreva ("Partiu Disney!")
+    <SeNão>
+        Escreva("Não vou viajar. #CHATEADO!")
+    <FimSe>
+
+   <R:> Nota-se que duas condições foram imposta, 1° "Partiu Disney!", 2° "Não vou viajar. #CHATEADO", só mostrará a condição que corresponde a expressão especificada, ou seja, caso o usuário digite um valor MAIOR ou IGUAL a mil reais, 1° condição execultada, caso o usuário digite um valor MENOR que mil reais, 2° condição será execultada. Ou seja, tudo vai depender da expressão e valor digitado/respondido pelo usuário.
+
+    Sintaxe: <Se (Expressão)> <Então>
+                    Bloco(A)
+             <SeNão>
+                    Bloco(B)
+             <FimSe>
+
+    <Se()> = Comando;
+    <Expressão> = Operação Matemática ou Lógica; <!-- Operação Mátematica (Contas) / Lógica (Resultado Verdadeiro) -->
+    <Então> = Comando;
+    <Bloco()> = Ação; <!-- É como vou resolver tal tarefa ou problema -->
+                      <!-- Sempre que for acrescentar/adicionar alguma coisa, deixar sempre ação por último  -->
+    <SeNão> = Comando; <!-- Ao utilizar, deixa de ser uma condicional simples, pois estão impondo duas situações (Compostas) -->
+    <FimSe> = Comando;
+
+======================================================================================================================================================
+
+    × CONDICIONAL (<ANINHADA>):
+
+    -Condição Aninhada, é quando ocorre duas ou mais situações, sendo que sempre depois de cada situação imposta, aos outras fiquem uma dentro da outra, assim, aninhadas;
+
+    <Se> (Dinheiro >= 1000) <Então>
+        Escreva("Partiu Disney!")
+    <SeNão>
+        <Se> (Dinheiro <= 500) <Então>
+            Escreva("Partiu visitar minha família!")
+        <SeNão>
+            Escreva ("Não vou viajar. #CHATEADO!")
+        <FimSE>
+    <FimSe>
+    
+    <R:> Nota-se que os comandos são os mesmo da SIMPLES e COMPOSTA, porém colocando um dentro do outro (aninhadas), criando várias situações, assim, o que vai mostrar na tela para o usuário, depois do valor/resposta do mesmo, for correspondente a EXPRESSÃO.
+
+    Sintaxe:    <Se (Expressão)> <Então>
+                    Bloco (A)
+                <SeNão>
+                    <Se (Expressão)> <Então>
+                        Bloco (B)
+                    <Senão>
+                        Bloco (C) 
+                    <FimSe>
+                <FimSe>
+
+    
+    <Se()> = Comando;
+    <Expressão> = Operação Matemática ou Lógica; <!-- Operação Mátematica (Contas) / Lógica (Resultado Verdadeiro) -->
+    <Então> = Comando;
+    <Bloco()> = Ação; <!-- É como vou resolver tal tarefa ou problema -->
+                      <!-- Sempre que for acrescentar/adicionar alguma coisa, deixar sempre ação por último -->
+    <SeNão> = Comando; <!-- Ao utilizar, deixa de ser uma condicional simples, pois estão impondo duas situações (Compostas) -->
+    <FimSe> = Comando;
+
+======================================================================================================================================================
+
+
+    × CONDICIONAL (<ESCOLHA-CASO>):
+
+    -Escolha Caso, pode ser utilizada para escolher uma opção declarada de vários valores númericos.
+
+    Escolha (Dinheiro)
+        Caso 1
+            Dinheiro <- Valor declarado na opção 1 (R$ 10,00)
+        Caso 2
+            Dinheiro <- valor declarado na opção 2 (R$ 20,00)
+        Caso 3
+            Dinheiro <- valor declarado na opção 3 (R$ 30,00)
+        Caso 4
+            Dinheiro <- valor declarado na opção 4 (R$ 40,00)
+        OutraCaso
+            Caso nenhum dos valores acima sejam escolhidos, será executado o valor que estiver declarado aqui. (Bloco D) <!-- Digite o valor -->
+    FimEscolha
+
+    <R:> Nota-se que cada caso estão com n° INTEIRO, ou seja, não pode utiliar n° reais para declarar opção. 
+    Importante! Não serve para testar faixa de valores, isso é, se estiver maior ou igual, menor que outra coisa... isso não é possível, e ela 
+    só vai funciona basicamente para valores inteiros, sendo possível nomear mais de 1 opção no mesmo caso, separando-os por vírgulas.
+
+    Com base no exemplo, é declarado 1° o comando Escolha/FimEscolha em seguida a Váriavel (Escolha (Váriavel)), está váriavel é a mesma que está utilizando para armazenar o dado informado pelo usuário, ou seja, o usuário tinha 5 opções para escolher, e dessas 5, qual ele escolhesse iria ser guardada na variável, que chamaria junto ao comando escolha, assim, vai entrar no comando, e ver qual caso, bate com o valor digitado pelo usuário. (Dentro de cada CASO, vamos especificar, o que vamos atribuir a variável).
+
+    É possível também, dar a mesma atribuição para vários casos, separando-os por vírcula.
+
+    Ex: Caso 1, 2, 3, 4...
+        Bloco A
+
+    Sintaxe:
+
+        <Escolha (Variável)>
+            <Caso 1>
+                Bloco A 
+            <Caso 2>
+                Bloco B 
+            <Caso 3>
+                Bloco C 
+            <OutroCaso>
+                Bloco D 
+        <FimEscolha>
+
+    <Escolha()> = Comando;
+    <Váriavel> = Espaço em branco, que vai armazenar o valor digitado pelo usuário; <!-- Só n° inteiro -->
+    <Caso 1, 2, 3..> = Opção; <!-- Com base no n° armazenado na variável, ou seja, Var: dinheiro = 2, execultará o caso 2 -->
+    <Bloco()> = Ação; <!-- Aquela opção, herdara a ação descrita em bloco -->
+                      <!-- Sempre que for acrescentar/adicionar alguma coisa, deixar sempre ação por último -->
+    <OutroCaso> = Comando;
+    <FimEnquanto> = Comando; <!-- Quando o n° da opção digitado, for maior que todas as opção de cada caso. -->
+                             <!-- Exemplo: Caso de 1 ao 7, usuário digitou 8, vai ser execultado o comando OutroCaso -->

@@ -1,0 +1,23 @@
+COMO-COMEÇAR:
+    
+    1° -> Lógica de programação; (Está na minha cabeça)
+    2° -> Linguagem de Programação; (JavaScript)
+    3° -> Sistema é criado.
+
+-Entender toda estrutura básica da linguagem; (Variáveis, identificadores, tipos primitivos e etc... e também como escrever alguma coisa na tela);
+
+-STRING? ...
+
+-Quando usado o operador de DIVISÃO, temos que nomear a váriavel que vai receber este valor da divisão em REAL, pois a linguagem de programação não trabalha mais com números INTEIROS, apenas REAIS. (Sempre bom já nomear o tipo REAL)
+
+-Tratamento Artimético dos n°? ... (Ver exércicios)
+
+DICAS:
+
+CamelCase, o que é e quando utilizar?
+
+R: São palavras inicias com letras Maiúscula e também, iniciadas com letrás minúsculas.
+R: UpperCamelCase (PascalCase), letra iniciada com Maiúsculo(Usar em classes, metódos).
+R: lowerCamelCase, letra inicial minúscula (Usar em variáveis, atributos e metódos).
+
+Obs.: Usada bastante em variáveis, classes e etc.

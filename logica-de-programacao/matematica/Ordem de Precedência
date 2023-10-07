@@ -1,0 +1,14 @@
+ORDEM DE PRECEDÊNCIA:
+    -Sequência de qual operação é executada, da 1° a última.
+    
+    ARITMÉTICOS:
+    1° - () = Parênteses;
+    2° - ^ = Exponênciação;
+    3° - * ou / = Multiplicação ou Divisão;
+    4° - + ou - = Adição ou Subtração;
+
+ORDEM DE PRECEDÊNCIA (GERAL):
+
+    1° - ARITMÉTICOS;
+    2° - RELACIONAIS; (TODOS TEM A MESMA ORDEM DE PRECEDÊNCIA, DA ESQUERDA P DIREITA)
+    3° - LÓGICOS;

@@ -1,0 +1,25 @@
+VARIÁVEL:
+    
+    São espaços em branco (Da memória do computador) que podem ser preenchidos com dados, que serão armazenado pelo computador naquele local, 
+    e não sendo possível, adicionar mais de 1 dado no mesmo local.
+
+    Em váriáveis, sempre temos que colocar:
+    -IDENTIFICADOR: TIPO; EX: Bola (Identificador): Brinquedo (Tipo);
+    
+    Regras Identificador:
+    -1°, Deve começar sempre com uma letra;
+    -2°, As próximas caractere pode ser letras ou n°; 
+    -3°, Não pode utilizar nenhum tipo de símbolo, exceto ( _ ); Representa o espaço em branco, quando queremos separar duas palavras.
+    -4°, Não pode conter espaços em branco;
+    -5°, Não pode ter letras com acentos; 
+    -6°, Não pode ser uma palavra reservada; (Ex: Comandos, Var, Algoritmo etc.)
+
+    Tipos primitivos:
+    -Inteiro; (1, 5, -9, 18, -57) São n° que não fracionam.
+    -Real; (1,00 . 10,00 . 50,00) São n° fracionados.
+    -Caractere; (Qualquer coisa entre "", cada forma que se usa para escreve)
+    -Lógico; (Verdadeiro ou Falso)
+
+    Sinal de Atribuição:
+    <- ou := , valor que se dá (Atribui) a variável; (Ex: VAR: MSG: Caractere > MSG <- Olá, mundo!)
+    Obs.: Quando for chamar a variável, sempre por entre (), mas sem usar "", porque dentro de ASPAS, vai ser considerado uma mensagem.

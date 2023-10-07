@@ -1,0 +1,98 @@
+<FUNÇÕES:>
+
+	-São os mesmo conceitos que procedimentos, porém, é possível retornar o resultado da função. No procedimento, ele precisa fazer o passo a passo e escrever o resultado, porque não consegue me dar o resultado no programa principal, ou seja, ele recebe os valores, faz a conta e mostra o resultado porque não consegue me dar resposta no programa principal, já funções vão poder retornar os resultados, e ai sim, dentro do programa principal é possível fazer algo com o resultado desta função;
+
+	-Em funções também é possível, criar uma variável local (escopo), fazer passagens pelos dois tipos de parâmetros (valor e referência), além de retornar o resultado dos valores ao programa principal; <!-- Dentro das variáveis locais, pode usar o mesmo nome da global, a linguagem ou ferramenta sabe diferenciar automaticamente o que é uma variável local e uma variável global -->
+
+	-Em funções, nota-se que é repetido na estrutura os tipos primitivos de variável, pois em função, quando se nomeia o segundo tipo primitivo da variável, quer dizer que representa o tipo primitivo do resultado da função que será retornado, isto é, indica que o retorno do meu resultado será daquele tipo primitivo de variável;
+	
+	-Utilizamos funções, quando vamos retornar operações ou lógica a variável global do meu programa principal; <!--  -->
+
+	Sintaxe (Função): <Função Nome():Inteiro>
+					  <var>
+					  <Inicio>
+					  	aqui vai o passo-a-passo (ação)
+					  <Retorno Variável/Parâmetros>
+					  <FimFunção>
+______________________________________________________________________________________________________________________________________________________
+
+	Exemplo¹:<Algoritmo>SomaFunção
+			 <Var> 
+			 		V1, V2, S: Inteiro <!-- Variável global, principal do meu programa -->
+
+			 <Função> Soma(X, Y: Inteiro):Inteiro<!-- Inicio da função -->
+			 <Var> <!-- Variável local, declarada dentro de função -->
+			 <Inicio> <!-- Inicio da função -->
+			 	aqui vai o passo-a-passo (ação)
+			 	<Retorne X + Y>
+			 <FimFunção> <!-- Fim da função -->
+
+			 <Inicio> <!-- Inicio do programa principal -->
+			 	Escreva("Digite o primeiro valor: ") <!-- Programa -->
+			 	Leia(V1)
+			 	Escreva("Digite o segundo valor: ")
+			 	Leia(V2)
+
+			 	S <- Soma(X,Y)
+
+			 	Escreval("A soma entre" V1 "e" V2 "e igual a" S)
+			 <FimAlgoritmo> <!-- Fim do programa principal -->
+
+	Nota-se que na função não foi pedido para mostrar o valor e sim, retornar o valor da soma entre X + Y, isto é, o nome dado a função [Soma(X, Y)] terá o retorno da equação realizado, isto é, que quando o programa realizar a função, o resultado do passo a passo (ação) será o valor da minha função Soma(X, Y) e retonará isso ao programa principal, que foi solicitado, que S recebesse função, e como notamos, os dois valores digitado pelo usuário V1 e V2 foram passados por parâmetro do tipo valor a nossa função, que quando realizada, retorno o valor do resultado com base nos valores digitado pelo o usuário e no final, meu programa principal me mostrou o valor que foi atribuido a S, realizada com função.
+
+	Nota-se também, que em função é sempre solicitado o comando RETORNE + o resultado da equação utilizando as variáveis locais (parâmetros), ou seja, é possível criar outras variáveis locais e o retorno seja a variável nomeada que será atribuido o resultado final da equação (passo-a-passo ou ação), isto é, se dentro da minha função eu declarasse que Z recebesse a soma de X + Y e o RETORNO fosse Z, minha função Soma(X,Y) retornaria o valor de Z, que é o resultado da minha equação realizada dentro da função, ou seja, as variáveis X e Y não precisam ser as variáveis que serão retornadas, e sim, é possível criar uma outra variável e utiliza-lá como RETORNO da minha equação, que será atribuida a minha função.
+
+	Nota-se que o comando RETORNE, recebeu a equação (SOMA) direto, sem uma passa-a-passo, sem um procedimento que realizasse a soma e atribuisse ao Retorno, pois é possível colocar direto no meu retorno.
+
+	Exemplo²:<Algoritmo>FatorialFunção <!-- Escopo+ -->
+			 <Var> 
+			 		N, F: Inteiro <!-- Variável global, principal do meu programa -->
+
+			 <Função> Fatorial(N):Inteiro<!-- Inicio da função -->
+			 <Var> <!-- Variável local, declarada dentro de função -->
+			 	C, R: Inteiro
+			 <Inicio> Fatorial(N) <!-- Inicio da função -->
+			 	R <- 1 <!-- Passo a passo da minha função -->
+			 	Para C <- 1 até V faça
+			 		R <- R * C
+			 	FimPara
+			 	<Retorne R>
+			 <FimFunção> <!-- Fim da função -->
+
+			 <Inicio> <!-- Inicio do programa principal -->
+				Escreva("Digite um número: ") <!-- programa -->
+				Leia(N)
+				F <- Fatorial(N)
+				Escreval("O valor de ", N, "! e igual a ", F)
+			 <FimAlgoritmo> <!-- Fim do programa principal -->
+
+	Criamos um programa para mostrar o fatorial de um n°, e neste programa utilizamos as variáveis locais (escopo), onde o RETORNO da função, não foi declarada a variável(parâmetro) já nomeada no nome da função (que neste caso seria <N>), e sim, criamos uma nova variável e está variável seria o  que RETORNARIAMOS como valor da minha função (<Retorne R>), ou seja, representará o valor da minha função Fatorial(N). <!-- Minha função vale R -->
+
+	Exemplo³:<Algoritmo>FibonacciFunção
+			 <Var> 
+			 	i, T1, T2, T3: Inteiro	 <!-- Variável global, principal do meu programa -->
+
+			 <Função> PróximoFibonacci(var N1, N2: Inteiro):Inteiro <!-- Inicio da função -->
+			 <Var> <!-- Variável local, declarada dentro de função -->
+			 	N3: Inteiro
+			 <Inicio> <!-- Inicio da função -->
+			 	N3 <- N1 + N2 <!-- Passo-a-passo (ação) da minha função -->
+			 	N1 <- N2
+			 	N2 <- N3
+			 	<Retorne N3>
+			 <FimFunção> <!-- Fim da função -->
+
+			 <Inicio> <!-- Inicio do programa principal -->
+				T1 <- 0 <!-- Programa -->
+				Escreval(T1)
+				T2 <- 1
+				Escreval(T2)
+				Para i <- 3 até 10 faça
+					T3 <- PróximoFibonacci(T1,T2)
+					Escreval(T3)
+				FimPara
+			 <FimAlgoritmo> <!-- Fim do programa principal -->
+
+	Criamos um programa utilizando função, para calcular uma série de fibonacci, nota-se que utilizamos a passagem por parâmetro(referência), onde os valores das variáveis T1 e T2, serão alteradas dentro da minha função e depois serão atribuidas as variáveis globais, isto é, se o N1 -> T1, se no fim N1 valer 2, dentro da variável global T1, que começou valendo 0, terminará tendo seu valor armazenada 2, e a T2, segue o mesmo conceito. É válido também, que toda minha ação dentro da minha função, teve seu RETORNO como <N3> e não utilizando as variáveis(parâmetros) nomeados no nome da função.
+
+<Importante!: Existem algumas funções que já vêm prontas dentro da linguagem de programação, para tratatamento de valores caractere (string), toda linguagem de programação ela permite a criação de funções personalizadas, mas a maioria das linguagens já vem também com algumas funções já pré-definidas dentro da sua bibliotecas> <!-- Java -->
