@@ -2,20 +2,20 @@
 
 Em multimensonais, adicionamos mais dimensões, isto é, enquanto em vetores usamos apenas um CONCHETES e mais a quantidade de espaços que vamos dar a variável, em variáveis compostas mutimensonais, adicionamos mais uma dimensão, isto é, vamos colocar além de linhas, colunas!
 
-Sintaxe: <Var>
-	 <M: vetor[1..3, 1..2] de inteiro> <!-- aqui eu tenho duas dimenssões 1° [1..3] e 2° [1..2], separadas por vírgula. -->
+	Sintaxe: <Var>
+		 <M: vetor[1..3, 1..2] de inteiro> <!-- aqui eu tenho duas dimenssões 1° [1..3] e 2° [1..2], separadas por vírgula. -->
 	
-	-Isto é, eu tenho 3 dimenssões de linhas (verticalmente) 1, 2 e 3, e (horizontalmente) eu tenho 2 dimenssões 1 e 2, que é o número de colunas que está variável vai ter;
-        -Se em vetores, tratamos a variável com apenas uma dimenssão, que é uma linha com uma certa quantidade de espaço especificado (posições), agora vamos utilizar variáveis compostas que tenha mais de uma dimenssão, ou seja, ao declarar mais de uma dimensão a quantidade que seria pra criar as posições da minha linha, elas agora vão criar a quantidade de linhas que minha variável vai ter, então [1..3] não é uma linha de 1 até a posição 3, e sim, 3 linhas, pois o que vai gerar minhas posições nessas linhas, é minha 2° segunda dimenssão [1..2] ou seja, colunas, neste caso, 2 colunas, sempre do 1 até (2) a quantidade especificada; 
+			-Isto é, eu tenho 3 dimenssões de linhas (verticalmente) 1, 2 e 3, e (horizontalmente) eu tenho 2 dimenssões 1 e 2, que é o número de colunas que está variável vai ter;
+        		-Se em vetores, tratamos a variável com apenas uma dimenssão, que é uma linha com uma certa quantidade de espaço especificado (posições), agora vamos utilizar variáveis compostas que tenha mais de uma dimenssão, ou seja, ao declarar mais de uma dimensão a quantidade que seria pra criar as posições da minha linha, elas agora vão criar a quantidade de linhas que minha variável vai ter, então [1..3] não é uma linha de 1 até a posição 3, e sim, 3 linhas, pois o que vai gerar minhas posições nessas linhas, é minha 2° segunda dimenssão [1..2] ou seja, colunas, neste caso, 2 colunas, sempre do 1 até (2) a quantidade especificada; 
 
--Como colocar os valores nas devidas posicionos, como funciona:
+			-Como colocar os valores nas devidas posicionos, como funciona:
 
-× <M[1,2]> <- 4 ; O n° 1° representa a primeira posição, da primeira linha da minha variável. O n° 2 qual coluna vamos colocar, neste caso, seria na segunda coluna da minha variável. Ou seja, o n° 4 colocariamos na 1° linha, e na 2° coluna. 
+			× <M[1,2]> <- 4 ; O n° 1° representa a primeira posição, da primeira linha da minha variável. O n° 2 qual coluna vamos colocar, neste caso, seria na segunda coluna da minha variável. Ou seja, o n° 4 colocariamos na 1° linha, e na 2° coluna. 
 
-ex: 1°L = [   ][ 4 ][   ][   ]
-    2°L = [   ][   ][   ][   ]
-    3°L = [   ][   ][   ][   ]
-	   1-C  2-C  3-C  4-C
+				    ex: 1°L = [   ][ 4 ][   ][   ]
+   				        2°L = [   ][   ][   ][   ]
+    					3°L = [   ][   ][   ][   ]
+	   				       1-C  2-C  3-C  4-C
 
 			× <M[2,2]> <- 5 ; Novamente, o n° 2 representa a segunda posição, da minha segunda linha da minha variável. O n° 2 qual coluna vamos colocar, neste caso, seria na segunda coluna da minha variável. Ou seja, o n° 5 colocariamos na 2° linha, e na 2° coluna.
 
