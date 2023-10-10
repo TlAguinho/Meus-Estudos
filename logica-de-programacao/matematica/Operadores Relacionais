@@ -1,0 +1,8 @@
+<Operadores-Relacionais>:
+
+ ( > ) = Maior que; <!-- Ex: 2 > 1 -->
+ ( < ) = Menor que; <!-- Ex: 1 < 2 -->
+ ( = ) = Igual a; <!-- Ex: 2 = 2 -->
+ ( >= ) = Maior ou igual a; <!-- Ex: 3 >= 2 -->
+ ( <= ) = Menor ou igual a; <!-- Ex: 3 <= 4 -->
+ ( <.> ) = Diferende de; <!-- Ex: 3 <> 4 -->
