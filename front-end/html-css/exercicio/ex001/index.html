@@ -1,7 +1,7 @@
 <!-- Sempre que tiver um novo conhecimento com base no exercício, vou colocar nesta aba, não foi criado uma nova pasta só para isso, então está pasta, conterá apenas tag's para texto e assim por diante -->
 
 
-<!-- Exercício 01, principais TAG'S para por no seu conteúdo do site -->
+<!-- Exercício 01, principais TAG'S HTML -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,108 +15,110 @@
 
     <!-- Para comentar no Visual Studio Code, Ctrl + ; ou abre fecha as setas <!- indicadoras -> -->
 
-  <fieldset>
+  <fieldset class="Basico">
 
-    <!-- 01 - Essas tags são usadas para texto, título, quebra de linha e etc.() -->
-
-    <h1>TAG'S HTML</h1> 
-    <h2>Lista das TAG'S H1, 2, 3, 4, 5 e 6</h2>
-    <h3>TAG H3</h3>
-    <h4>TAG H4</h4>
-    <h5>TAG H5</h5>
-    <H6>TAG H6</H6>
-
-    <!-- H1 ao H6, tag's usadas para definir títulos -->
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nulla animi ipsum quae aliquid! Sit quam dolores accusantium eos dolorum consequuntur quis! Nobis harum eaque, reiciendis nihil vero repudiandae quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat commodi illo sed ratione cupiditate minima, hic deleniti odit magnam. Quisquam a incidunt dolorem excepturi id ratione fugiat blanditiis exercitationem impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint blanditiis nam, vero eius pariatur breos aliquam asperiores voluptates. Maxime ratione quam minima eius doloremque. Voluptates dicta doloremque sunt quos?</p> 
-    <!-- P, é para Paragrafos do seu SITE; -->
-
-    <p>Palavra destacada em <b>Negrito</b></p>
-    <!-- B deixa a escrita em NEGRITO -->
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum labore magni assumenda, cumque earum quos distinctio quae quam explicabo quod ab quas optio a illo impedit quo asperiores ipsam adipisci. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, esse! Nesciunt eum doloremque cum porro numquam alias, dolores totam assumenda vero nisi laboriosam mollitia esse veniam sapiente veritatis dolor? Voluptas!</p>
-      <!-- BR quebra o texto onde desejar. -->
-
-    <hr> <!-- HR, uma linha verticalmente. Início ao fim da página -->
-    
-    <u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed molestias reprehenderit pariatur officiis cumque corporis recusandae nemo quo molestiae, earum a impedit perferendis numquam nulla saepe inventore maxime. Pariatur?</u>     <!-- Sublinhado -->
+    <!DOCTYPE>
+    <html>
+    <head>
+    <title>
+    <body>
+    <h1> ao <h6>
+    <p>
     <br>
-    
-    <br>
-    <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at laboriosam corrupti quisquam adipisci voluptatum nemo ullam, asperiores eos quod repellat repudiandae quasi? Corrupti maiores, ea ipsum odio iste itaque?</i>               <!-- Itálico -->
-    <br>
+    <hr>
 
-    <br>
-    <s>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet delectus qui ducimus. Dolorem accusamus perspiciatis ut, cum eius ad consectetur velit quod deleniti, impedit porro quis voluptate exercitationem dolore soluta.</s>     <!-- Palavras Riscadas -->
-    <br>
+  </fieldset> <!--Fim Básico-->
 
-    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, soluta quisquam in reiciendis recusandae, sit veritatis, fugit nihil similique debitis voluptatibus. Sunt, quidem aut! Fugiat, libero.</span>
-    <!-- Está tag, se comporta como inline, isto é, ela não quebra para linha de baixo, até que todo espaço da linha seja preenchido, um elemento que se pode embutir -->
+  <fieldset class="Formatacao">
 
-  </fieldset> <!-- Fim-Fieldset01 -->
+    <b></b>
+    <i></i>
+    <s></s>
+    <u></u>
 
-  <fieldset>
+  </fieldset> <!-- Fim Formatação -->
 
-    <!-- 02 - Essas tags são usadas para formulários, tabelas, listas, imagens-->
-    
-    <img> <!-- Tag para inserir imagens -->
+  <fieldset class="Formulario-e-Entrada">
 
-    <form></form> <!-- para criar formulários -->
-    <fieldset></fieldset>  <!-- Agrupar os elementos de um formulário -->
-    <legend></legend> <!-- tag para dar um título/definição de um forumário -->
-    <table></table>  <!-- para criar tabelas -->
-    <tr></tr>  <!-- cria uma linha dentro da tabela, usada em conjunto com TD -->
-    <td></td>  <!-- informa os dados da tabela, usada em conjunto com TR ou TH -->
-    <th></th>  <!-- deixa os dados em negrito, usar para definir o título de dados de uma tabela, usada em conjunto com TD -->
-    <ul></ul>  <!-- Uma lista não ordenada, usada em conjunto com LI -->
-    <ol></ol>  <!-- Uma lista ordenada, usada em conjunto com LI -->
-    <li></li>  <!-- Define um item da lista, usada em conjuto com OL ou UL -->
-    <input type="text">  <!-- Cria uma caixa de entrada de texto no formulário -->
-    <input type="Submit">  <!-- Cria um botão de entrada no formulário -->
-    <input type="button">
-    <input type="checkbox">
-    <input type="file">
-    <option value=""></option>
+    <form></form>
+    <input>
+    <select></select>
     <optgroup></optgroup>
-    <label for=""></label>
+    <option></option>
+    <label></label>
+    <fieldset></fieldset>
+    <legend></legend>
 
-  </fieldset>  <!-- Fim-Fieldset02 -->
+  </fieldset> <!-- Fim Formulário e Entrada -->
 
-  <fieldset>
+  <fieldset class="Molduras">
 
-    <!-- 03 - Essas tags são para mapear as marcações -->
+    <iframe></iframe>
 
+  </fieldset> <!-- Fim Molduras -->
+
+  <fieldset class="Imagens">
+
+    <img>
+
+  </fieldset> <!-- Fim Imagens -->
+
+  <fieldset class="Auido-e-Video">
+
+    <audio></audio>
+    <video></video>
+
+  </fieldset> <!-- Fim Audio/Videio -->
+
+  <fieldset class="Ligacoes">
+
+    <a></a>
+    <link>
+
+  </fieldset> <!-- Fim Ligações -->
+
+  <fieldset class="Listas">
+
+    <ul></ul>
+    <ol></ol>
+    <li></li>
+
+  </fieldset> <!-- Fim Listas -->
+
+  <fieldset class="Tabelas">
+
+    <table></table>
+    <th></th>
+    <tr></tr>
+    <td></td>
+    <thead></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+
+  </fieldset> <!-- Fim Tabela -->
+
+  <fieldset class="Estilos-e-Semantica">
+
+    <style></style>
+    <div></div>
+    <span></span>
     <header></header>
-    <nav></nav>
+    <footer></footer>
     <main></main>
+    <nav></nav>
     <section></section>
     <article></article>
     <aside></aside>
     <address></address>
-    <footer></footer>
 
-  </fieldset>   <!-- Fim-Fieldset03 -->
+  </fieldset> <!-- Fim Estilos e Semantica -->
 
-  <fieldset>
+  <fieldset class="Meta-Informacoes">
 
-    <!-- 04 - essas tags são para inclusir sites, videos, audios e etc.  -->
+    <meta>
 
-    <iframe src=""></iframe>
-    <video src=""></video>
-    <audio src=""></audio>
+  </fieldset> <!-- Fim Meta/Informações -->
 
-  </fieldset>   <!-- Fim-Fieldset04 -->
-
-
-  <fieldset>
-
-    <!-- 05 - Tags cruciais -->
-
-    <div></div> <!-- TAG usada para criar uma caixa [], normalmente usada para por os outros elementos(tag) dentro; -->
-    <meta>  <!-- TAG usada para informações, ou seja, é usada para especificar o conjunto de caracteres, a discrição da página, palavras chaves, autor, configurações do viewport e etc. -->
-    <link>  <!-- TAG usada para importar elementos externos, ou seja, para incluir outros recursos de fora da página que estiver devolvendo o site. -->
-
-  </fieldset>  <!-- Fim-Fieldset05 -->
 
     <!-- Tudo que foi mencionado acima foi com base no meu aprendizado, mas caso minha dissertação tenha ficado difícil de entender, deixo aqui uma das melhores documentação que me ajudou no aprendizado. (https://www.w3schools.com/) -->
     
