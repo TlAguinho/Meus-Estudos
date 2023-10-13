@@ -1,1 +1,13 @@
-Em andamento...
+Exercícios 01) Escreva um programa que mostre na tela a mensagem "Olá, Mundo!" 
+
+R:
+
+algoritmo "Ex001"
+var
+
+inicio
+
+      Escreval ("Olá, mundo!")
+      Escreva ("Ufa! Me livrei da maldição!")
+
+fimalgoritmo
