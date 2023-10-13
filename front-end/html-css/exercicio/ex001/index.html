@@ -13,32 +13,42 @@
 </head>
 <body>
 
-    <!-- Para comentar no Visual Studio Code, Ctrl + ; ou abre fecha as setas <!- indicadoras -> -->
+    <!-- LEGENDA:  -->
+    <!-- R: = Resposta referente a funcionalidade da TAG; -->
+    <!-- IMP!: = Anotação importante -->
 
-  <fieldset class="Basico">
+  <BASICO>
 
-    <!DOCTYPE>
-    <html>
-    <head>
-    <title>
-    <body>
-    <h1> ao <h6>
-    <p>
-    <br>
-    <hr>
+    <!DOCTYPE> R: Todos os documentos HTML devem começar com uma <!DOCTYPE>declaração. A declaração não é uma tag HTML. É uma "informação" para o navegador sobre que tipo de documento esperar.
 
-  </fieldset> <!--Fim Básico-->
+    <html> R: Representa a raiz de um documento HTML, é o contêiner para todos os outros elementos HTML (Exceto <!DOCTYPE>). IMP!: Você deve sempre incluir o atributo LANG dentro da tag, para declarar o idioma da página web. O objetivo é ajudar os mecanismos de pesquisa e navegadores.
 
-  <fieldset class="Formatacao">
+    <head> R: É um contêiner para metadados (dados sobre dados) e é colocado entre a tag <html> e a tag <body>. Metadados são dados sobre o documento HTML. Os metadados não são exibidos. Os metadados normalmente definem o título do documento, conjunto de caracteres, estilos, scripts e outras metainformações. 
+
+    <title> R: tag define o título do documento. O título deve ser somente texto e é mostrado na barra de título do navegador ou na aba da página. IMP!: É obrigatória em documentos HTML (não pode ter mais de uma dessa TAG no documento HTML)
+
+    <body> R: Define o corpo do documento. IMP!: contém todo o conteúdo de um documento HTML, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
+
+    <h1> ao <h6> R: São usadas para definir títulos HTML. IMP!: H1 define o mais importante, H6 menos importante. Use apenas um H1 por página - deve representar o título/assunto principal de toda a página. Além disso, não pule os níveis de título - comece com H1, depois use H2 e assim por diante.
+
+    <p> R: Define um parágrafo.
+
+    <br> R: Insere uma quebra de linha onde desejar. IMP!: Usar semanticamente. 
+
+    <hr> R: Insere uma linha horizontalmente, usa para separar textos/tópicos e etc.
+
+  <!--Fim Básico-->
+
+  <FORMATACAO>
 
     <b></b>
     <i></i>
     <s></s>
     <u></u>
 
-  </fieldset> <!-- Fim Formatação -->
+  <!-- Fim Formatação -->
 
-  <fieldset class="Formulario-e-Entrada">
+  <FORMULARIO-E-ENTRADA">
 
     <form></form>
     <input>
@@ -49,43 +59,43 @@
     <fieldset></fieldset>
     <legend></legend>
 
-  </fieldset> <!-- Fim Formulário e Entrada -->
+  <!-- Fim Formulário e Entrada -->
 
-  <fieldset class="Molduras">
+  <MODULRAS>
 
     <iframe></iframe>
 
-  </fieldset> <!-- Fim Molduras -->
+  <!-- Fim Molduras -->
 
-  <fieldset class="Imagens">
+  <IMAGENS>
 
     <img>
 
-  </fieldset> <!-- Fim Imagens -->
+  <!-- Fim Imagens -->
 
-  <fieldset class="Auido-e-Video">
+  <AUDIO-E-VIDEO>
 
     <audio></audio>
     <video></video>
 
-  </fieldset> <!-- Fim Audio/Videio -->
+  <!-- Fim Audio/Videio -->
 
-  <fieldset class="Ligacoes">
+  <Ligacoes>
 
     <a></a>
     <link>
 
-  </fieldset> <!-- Fim Ligações -->
+  <!-- Fim Ligações -->
 
-  <fieldset class="Listas">
+  <LISTAS>
 
     <ul></ul>
     <ol></ol>
     <li></li>
 
-  </fieldset> <!-- Fim Listas -->
+  <!-- Fim Listas -->
 
-  <fieldset class="Tabelas">
+  <TABELA>
 
     <table></table>
     <th></th>
@@ -95,9 +105,9 @@
     <tbody></tbody>
     <tfoot></tfoot>
 
-  </fieldset> <!-- Fim Tabela -->
+  <!-- Fim Tabela -->
 
-  <fieldset class="Estilos-e-Semantica">
+  <ESTILOS-E-SEMANTICA>
 
     <style></style>
     <div></div>
@@ -111,13 +121,13 @@
     <aside></aside>
     <address></address>
 
-  </fieldset> <!-- Fim Estilos e Semantica -->
+  <!-- Fim Estilos e Semantica -->
 
-  <fieldset class="Meta-Informacoes">
+  <META-INFORMACOES>
 
     <meta>
 
-  </fieldset> <!-- Fim Meta/Informações -->
+  <!-- Fim Meta/Informações -->
 
 
     <!-- Tudo que foi mencionado acima foi com base no meu aprendizado, mas caso minha dissertação tenha ficado difícil de entender, deixo aqui uma das melhores documentação que me ajudou no aprendizado. (https://www.w3schools.com/) -->
