@@ -4,11 +4,13 @@ COMO-COMEÇAR:
     2° -> Linguagem de Programação; (JavaScript)
     3° -> Sistema é criado.
 
--Entender toda estrutura básica da linguagem; (Variáveis, identificadores, tipos primitivos e etc... e também como escrever alguma coisa na tela);
+-Entender toda estrutura básica da linguagem; (Variáveis, identificadores, tipos primitivos e etc... e também como escrever alguma coisa na 
+tela);
 
 -STRING? ...
 
--Quando usado o operador de DIVISÃO, temos que nomear a váriavel que vai receber este valor da divisão em REAL, pois a linguagem de programação não trabalha mais com números INTEIROS, apenas REAIS. (Sempre bom já nomear o tipo REAL)
+-Quando usado o operador de DIVISÃO, temos que nomear a váriavel que vai receber este valor da divisão em REAL, pois a linguagem de 
+programação não trabalha mais com números INTEIROS, apenas REAIS. (Sempre bom já nomear o tipo REAL)
 
 -Tratamento Artimético dos n°? ... (Ver exércicios)
 
