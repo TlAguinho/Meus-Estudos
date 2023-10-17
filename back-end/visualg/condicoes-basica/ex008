@@ -1,0 +1,39 @@
+Exercício 8) Desenvolva um programa que leia uma distância em metros e mostre os valores relativos em outras medidas.
+
+Ex:
+    Digite uma distância em metros: 185.72
+    A distância de 185.72m corresponde a:
+    0.18572 KM
+    1.8572 HM
+    18.572 DAM
+    1857.2 DM
+    18572.0 CM
+    185720.0 MM
+
+R:
+
+algoritmo "Distancia"
+var
+       M, KM, HM, DAM, DM,CM, MM: Real
+inicio
+
+      Escreva("Digite uma distância em metros: ")
+      Leia(M)
+      KM <- M / 1000
+      HM <- M / 100
+      DAM <- M / 10
+      DM <- M / 0.1
+      CM <- M / 0.01
+      MM <- M / 0.001
+      Limpatela
+      
+      Escreval("A distância de ", M, "m", " corresponde a: " )
+      Escreval(KM, " km") //quilometros
+      Escreval(HM, " hm") //hectometro
+      Escreval(DAM, " dam") //decametro
+                            //metro ( M / 1)
+      Escreval(DM, " dm") //decimetro
+      Escreval(CM, " cm") //centimetro
+      Escreval(MM, " mm") //milimetro
+      
+fimalgoritmo

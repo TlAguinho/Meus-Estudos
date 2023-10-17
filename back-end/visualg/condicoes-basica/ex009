@@ -1,0 +1,15 @@
+Exercício 9) Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$) e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,45.
+
+R:
+
+algoritmo "ConversaoDolar"
+var
+   D, US: Real
+inicio
+
+      Escreva("Quanto em dinheiro tem na carteira: ")
+      Leia(D)
+      US <- D / 3.45
+      Escreva("Você poderá comprar apenas U$", US:5:2)
+
+fimalgoritmo

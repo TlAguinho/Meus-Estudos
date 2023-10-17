@@ -1,0 +1,21 @@
+Exercício 3) Crie um programa que leia o nome e o salário de um funcionário, mostrando no final uma mensagem.
+
+Ex: Nome do funcionário = Nome
+    Salário: R$
+
+R:
+
+algoritmo "SalarioFuncionario"
+var
+   Fun: Caractere
+   Sal: Real
+inicio
+
+   Escreval("Qual o nome do funcionário?")
+   Leia(Fun)
+   Escreval("Qual o salário do funcionário?")
+   Leia(Sal)
+   Limpatela
+   Escreval("O funcionário ", Fun, " recebe um salário de R$", Sal)
+
+fimalgoritmo

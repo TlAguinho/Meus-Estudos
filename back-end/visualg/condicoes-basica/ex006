@@ -1,0 +1,26 @@
+Exercício 6) Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor.
+
+Ex: 
+    Digite um número: 9
+    O Antecessor de 9 é 8
+    O Sucessor de 9 é 10
+
+R:
+
+Algoritmo "AntecessoreSucessor"
+var
+
+N1, Ant, Suc: Inteiro
+
+inicio
+
+Escreva("Digte um número: ")
+Leia(N1)
+Ant <- N1 - 1
+Suc <- N1 + 1
+limpatela
+Escreval("O antecessor de ", N1, " é igual ", Ant)
+Escreval("O Sucessor de ", N1, " é igual ", Suc)
+
+fimalgoritmo
+

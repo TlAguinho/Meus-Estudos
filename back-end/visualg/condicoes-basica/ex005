@@ -1,0 +1,30 @@
+Exercício 5) Faça um programa que leia as duas notas de um aluno em uma matéria e mostre na tela a sua média na disciplina.
+
+Ex:
+    Nota 1: X
+    Nota 2: Y
+    A média entre X e Y é de igual a "Resultado" (Real)
+
+R:
+
+algoritmo "Media"
+var
+   N1, N2, M: Real
+inicio
+
+   Escreval("------------------------")
+   Escreval("       Matemática       ")
+   Escreval("------------------------")
+
+   Escreva("Digite o valor da primeira nota:")
+   Leia(N1)
+   Escreva("Digite o valor da segunda nota:")
+   Leia(N2)
+
+   M <- (N1 + N2)/2
+   Limpatela
+
+   Escreva("A média entre ", N1, " e ", N2, " é de igual a", M)
+
+
+fimalgoritmo

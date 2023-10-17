@@ -1,0 +1,27 @@
+Exercício 4) Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório entre eles.
+
+Ex: Digite um valor: X
+    Digite outro valor: Y
+    A soma entre X e Y é igual a "Resultado".
+
+R:
+
+algoritmo "Somade2numeros"
+var
+
+   V1, V2, S: Inteiro
+
+inicio
+
+      Escreva("Digite um valor:")
+      Leia(V1)
+      Escreva("Digite outro valor:")
+      Leia(V2)
+      
+      S <- V1 + V2
+      Limpatela
+      
+      Escreva("A soma entre ", V1, " e ", V2, " é igual a", S)
+
+fimalgoritmo
+

@@ -1,0 +1,26 @@
+Exercício 7) Crie um algoritmo que leia um número real e mostre na tela o seu dobro e a sua terça parte.
+
+Ex:
+    Digite um número: 3.5
+    O dobro de 3.5 é 7.0
+    A terça parte de 3.5 é 1.16666
+
+R:
+
+algoritmo "semnome"
+var
+
+N1, Dou, Tri: Real
+
+inicio
+
+Escreva("Digite um número real: ")
+Leia(N1)
+Dou <- N1 * 2
+Tri <- N1 / 3
+Limpatela
+
+Escreval("O o dobro de ", N1, " é igual a ", Dou)
+Escreval("A terça parte de ", N1, " é igual a ", Tri)
+
+fimalgoritmo
