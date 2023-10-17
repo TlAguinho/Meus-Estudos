@@ -16,3 +16,4 @@ inicio
       
 fimalgoritmo
 
+Comando "LimpaTela", serve para limpar a tela de informação e exibir uma nova informação na tela sem que as informações anteriores sejam exibidas.
