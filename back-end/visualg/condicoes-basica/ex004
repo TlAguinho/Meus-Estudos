@@ -25,3 +25,9 @@ inicio
 
 fimalgoritmo
 
+//Para resolver este problema, pensei:
+//1° - No próprio anúnciado me deu o calculo que usaria para resolver este problema, soma!
+//2° - Então além das variáveis V1 e V2, também adicionei uma para guardar o valor da soma desses dois números;
+//3° - Após realizar a questão, mostrei na tela para o usuário a soma entre os dois valores, sendo S a variável que armazenou o resultado da equação;
+
+

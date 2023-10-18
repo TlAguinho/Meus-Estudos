@@ -1,0 +1,29 @@
+Exercício 10) Faça um algoritmo que leia a largura e altura de uma parede, calcule e mostre a área a ser pintada e a quantidade de tinta necessária para o serviço, sabendo que
+cada litro de tinta pinta uma área de 2metros quadrados.
+
+R:
+
+algoritmo "PintandoParede"
+var
+     L, A, P, T: Real
+inicio
+
+      Escreval("Quantos metros de largura tem: ")
+      Leia(L)
+      Escreval("Quantos metros de altura tem: ")
+      Leia(A)
+      P <- L * A
+      T <- P / 2
+      Limpatela
+      
+      Escreval("A área a ser pintada tem uma parede no total de", P, " metros quadrados")
+      Escreval("Será necessário comprar", T, "LT", " de tinta para pintar toda área da parede")
+
+fimalgoritmo
+
+//Para calcular a área total de uma terreno, piso, imóvel, sempre necessário multiplicar largura x comprimento;
+//Para calcular a área total de uma parede, sempre multiplicar a altura x largura;
+//Sempre por primeiro, vamos realizar a medida de cada lado;
+//Isso significa que a uma parede vai ter uma área de 6 metros quadrados, ou seja, um espaço de 6 metros de largura e 2 metros de altura;
+//Os valores informados (6 e 2) são apenas de exemplos;
+//Metros quadrados significa a medida que representa a quantidade de espaço que um objeto ou superfície ocupa;

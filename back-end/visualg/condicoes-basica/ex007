@@ -24,3 +24,8 @@ Escreval("O o dobro de ", N1, " é igual a ", Dou)
 Escreval("A terça parte de ", N1, " é igual a ", Tri)
 
 fimalgoritmo
+
+//Para resolver este problema, pensei:
+//1° - Sempre que falamos em dobro, é o número vezes ele mesmo, então iria multiplicar por 2;
+//2° - Terça parte foi algo novo, porém com base no exemplo, entendi que a terça parte, é o valor do número digitado divido por 3;
+//3° - Assim que me deu o resultado, mostrei ao usuário o dobro e terça parte do número real digitado;

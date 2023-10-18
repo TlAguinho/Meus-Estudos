@@ -19,3 +19,5 @@ inicio
    Escreval("O funcionário ", Fun, " recebe um salário de R$", Sal)
 
 fimalgoritmo
+
+//Não há explicação, na descrição do problema já diz tudo, basta apenas saber os comandos de entrada, saída e variáveis da ferramenta ou linguagem que está utilizando;

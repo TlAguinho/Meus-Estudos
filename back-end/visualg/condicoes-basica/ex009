@@ -10,6 +10,15 @@ inicio
       Escreva("Quanto em dinheiro tem na carteira: ")
       Leia(D)
       US <- D / 3.45
+      Limpatela
+      
+      Escreval("Na carteira tem R$ ", D:5:2)
       Escreva("Você poderá comprar apenas U$", US:5:2)
 
 fimalgoritmo
+
+//Para resolver este problema foi pensado da seguinte maneira:
+//1° - Saber o quanto a pessoa tem em dinheiro reais;
+//2° - Com este dinheiro, sabendo que a cada dolar (U$) custa R$ 3,45;
+//3° - Pensei em dividir o dinheiro, pelo valor que custa cada dolar, então a cada um dolar comprado, diminuiria do meu dinheiro R$ 3,45;
+//4° - Após comprado todo dolar possível com dinheiro que tinha na carteira, mostrei ao usuários quantos dinheiros em dolar ele conseguiria comprar.

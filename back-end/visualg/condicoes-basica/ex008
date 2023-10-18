@@ -37,3 +37,17 @@ inicio
       Escreval(MM, " mm") //milimetro
       
 fimalgoritmo
+
+//Para resolver este problema, eu pensei:
+//1° - Quanto equivale KM, HM, DAM, M, DM, CM e MM;
+//2° - Entendi que a partir do metro são obtidas outras medidas de comprimentos, que são múltiplos e submúltiplos do metro.
+//3° - Então entendi que 0.10mm, equivale a 0.01cm e assim por diante;
+//4° - O cálculo que leva a este resultado é simples, se deseja converter uma unidade menor para uma maior basta dividir por 10 e se deseja converter uma maior para menor
+basta multiplicar por 10;
+//5° - Então depois de todo entendimento, eu pensei em que cada 1000M, eu tinha 1KM, a cada 100M, eu tinha 1HM, a cada 10M, eu tinha 10DAM e assim sucessivamente;
+//Tabela de medidas de comprimento utilizada: [ 1000M = KM ] [ 100M = HM] [10M = DAM] [1M = M] [0,1M = DM] [0,01M = CM] [0,001M = mm]
+//6° - Então com bases nesses valores, pegaria o valor da distância digitada pelo usuário e dividiria pela quantidade de vezes que desse de 0.001mm multiplicada por 10 
+até chegar as suas respectivas medidas (KM, HM, DAM, DM e CM).
+
+Irei trazer mais exercícios de medidas/conversão das medidas de comprimento!
+https://matematicabasica.net/medidas-de-comprimento-exercicios/ (link dos exercícios)

@@ -24,3 +24,8 @@ Escreval("O Sucessor de ", N1, " é igual ", Suc)
 
 fimalgoritmo
 
+//Para resolver este problema, pensei:
+//1° - Sucessor é sempre o número que vem depois, do último número digitado, ou seja, 1, 2, 3, 4...5. 5 É o sucessor de 4;
+//2° - Antecessor é sempre o número que vem antes, do último número digitado, ou seja, 1, 2, 3 e 4... 3 É o Antecessor de 4;
+//3° - Sabendo dissso, precisaria pegar o número digitado pelo o usuário e somar +1 para o sucessor e -1 para o antecessor;
+//4° - Assim, quando a equação fosse realizada, mostraria na tela para o usuário o sucessor e o antecessor do número digitado.

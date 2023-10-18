@@ -29,3 +29,9 @@ inicio
 
 fimalgoritmo
 
+//Para resolver este problema, foi pensado:
+//1° - Escolhi uma materia que assusta diversas pessoas;
+//2° - Precisava saber quantos o aluno tirou nas duas avaliações;
+//3° - Pensei que para calcular a média, logo pensei em metade, então para saber a metade de dois valores somados, total, dividiria por 2, que sempre irá me resultar a metade 
+de um número, a soma entre dois números, subtração, mutiplicação e assim por diante.
+//4° - Após ter o resultado dessas equações, mostrei ao usuário a média que o aluno tirou;
