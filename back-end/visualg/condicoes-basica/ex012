@@ -1,0 +1,27 @@
+Exercício 12) Crie um programa que leia o preço de um produto, calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.
+
+R:
+
+algoritmo "ProdutoCDesconto"
+var
+
+   P, D, Desconto, Preco: Real
+
+inicio
+
+      Escreval("Qual preço do produto: ")
+      Leia(P)
+      Escreval("Qual o valor do desconto %: ")
+      Leia(D)
+      
+      Desconto <- (P / 100) * D
+      Preco <- P - Desconto
+      
+      Escreval("O valor do meu desconto é de", Desconto)
+      Escreval("O valor do meu produto com desconto é de", Preco)
+
+fimalgoritmo
+
+//1°, revisei como faço para calcular uma porcentagem encima de um produto
+//Visto como realizar esse calculo, solicite ao usuário o preço do produto e o valor do desconto
+//É válido perguntar ao usuário qual o valor do desconto, pois assim ele poderá ver outros calculos, ex: se fosse 5, 10, 12% de desconto.
