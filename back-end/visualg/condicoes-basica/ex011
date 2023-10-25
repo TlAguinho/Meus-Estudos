@@ -2,10 +2,50 @@ Exercício 11) Desenvolva uma lógica que leia os valores de A, B e C de uma equ
 
 R:
 
+algoritmo "Eq2GrauValorDelta"
+var
+
+   A, B, C, D: Real
+
+inicio
+      Escreval("----------------------")
+      Escreval("    Valor de Delta    ")
+      Escreval("----------------------")
+
+      Escreva("Digite o valor de A: ")
+      Leia(A)
+      Escreva("Digite o valor de B: ")
+      Leia(B)
+      Escreva("Digite o valor de C: ")
+      Leia(C)
+      Escreval("       ") //Só para pular uma linha e ficar melhor minha visualização;
+      
+      Escreval("Minha equação reduzida do 2°G.:", A, "x²", B, "x + ", C, " = 0")
+      
+      Escreval("       ") //Só para pular uma linha e ficar melhor minha visualização;
+      
+      D <- B^2 - 4 * A * C //Como o sistema entende essa equação?
+      
+      Escreval(A, "x²", B, "x +", C, " = 0")
+      Escreval("       ") //Só para pular uma linha e ficar melhor minha visualização;
+      Escreval("O valor de Delta é:",D)
+      
+      //Pergunta: Se eu informar apenas a equação e pedir os dados para o usuário o programa me retorna o resultado da equação?
+      //Pergunta: ----
+
+fimalgoritmo
+
 
 //Para resolver este problema, pensei:
 //Revisei equação do 2° grau;
-//...
+//Formula da equação do 2° grau = x² + bx + c = 0;
+//Perguntei ao usuário os valores de cada letra: A, B e c;
+//Assim mostrei como ficaria minha formula;
+//Em seguida, atribui o valor da equação no D (Delta);
+//No final, o programa me deu o resultado e mostrei na tela;
+//O sinal de // + escrita no programa, são apenas comentários que deixei para retirar minhas dúvidas, que tive durante a resolução;
+
+
 
 
 
