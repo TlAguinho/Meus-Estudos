@@ -1,0 +1,24 @@
+Exercício 13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.
+
+R:
+
+algoritmo "ReajusteDoSalario"
+var
+
+  Sal, Por, Aumento, NSal: Real
+
+inicio
+
+
+      Escreval("Qual o valor do salário do funiconário R$?:")
+      Leia(Sal)
+      Escreval("Quantos porcentos este salário vai aumentar?:")
+      Leia(Por)
+      
+      Aumento <- (Sal * Por) / 100
+      NSal <- Sal + Aumento
+      
+      Escreval("O novo salário do funcionário é de ", NSal)
+
+fimalgoritmo
+

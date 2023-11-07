@@ -1,0 +1,30 @@
+Exercício 14) A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar, sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.
+
+R:
+
+algoritmo "LocadoraDeCarros"
+var
+
+      km, dia, preco_total, preco_km, preco_por_dia, preco_dia: Real
+
+inicio
+
+      Escreval("Qual foi a quantidade de KM percorrido?:")
+      Leia(km)
+      Escreval("Por quantos dias ficará com o carro?:")
+      Leia(dia)
+      
+      preco_por_dia <- 90
+      preco_km <- km * 0.20
+      preco_dia <- dia * preco_por_dia
+      preco_total <- preco_dia + preco_km
+      
+      Escreval("Caro cliente, o total foi de", preco_total)
+
+fimalgoritmo
+
+//Perguntar quantidade de KM percorrido?
+//Perguntar quantidade de dias que foi alugado?
+//Qual o preço total a pagar?
+//A diária do carro custa R$ 90,00
+//A cada KM (1000M) rodados, o cliente paga +0,20 centavos.

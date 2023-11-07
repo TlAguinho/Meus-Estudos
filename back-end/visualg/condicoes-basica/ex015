@@ -1,0 +1,27 @@
+Exercício 15) Crie um programa que leia o número de dias trabalhados em um mês e mostre o salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada.
+
+R:
+
+algoritmo "SalarioMensal"
+var
+
+dias: Inteiro
+carga_horaria, salario: Real
+
+inicio
+
+Escreval("Quantos dias você trabalhou este mêS?:")
+Leia(dias)
+
+carga_horaria <- 8 * 25
+salario <- carga_horaria * dias
+
+Escreval("O funcionário trabalho por", dias, " dias e seu salário no fim do mês é de R$", salario)
+
+
+fimalgoritmo
+
+//N° de dias trabalhos em 1 mês (31 dias);
+//Cargo horaria 8  horas por dia;
+//a cada 1 hora, ele recebe R$ 25,00;
+//mostrar o salário de 1 mês;
