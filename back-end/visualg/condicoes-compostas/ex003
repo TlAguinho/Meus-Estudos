@@ -1,0 +1,40 @@
+Exercício 03) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento (se ficou acima da média 7.0).
+
+R:
+
+algoritmo "MediaAlunoBoaouRuim"
+var
+
+   aluno: Caractere
+   n1, n2, media: Real
+
+inicio
+
+      Escreval("-------------------------------")
+      Escreval("   APROVEITAMENTO - BOM/RUIM   ")
+      Escreval("-------------------------------")
+      Escreval("                               ")
+      Escreval("Qual o nome do aluno?")
+      Leia(aluno)
+      Escreval("Qual o valor da 1° nota do ", aluno)
+      Leia(n1)
+      Escreval("Qual o valor da 2° nota do ", aluno)
+      Leia(n2)
+      
+      media <- (n1 + n2) / 2
+      
+      Se (media >= 7) entao
+         Escreval("Meus parabéns ", aluno)
+         Escreval("Sua média foi de ", media, " uma ótima MÉDIA!")
+      Senao
+         Escreval("Infelizmente ficou de recuperação ", aluno)
+         Escreval("Sua média foi de ", media, " estude mais na próxima")
+      FimSe
+
+fimalgoritmo
+
+//1°, nome do aluno;
+//2°, notas 1 e 2;
+//3°, ver a média entre as notas e mostrar na tela;
+//4°, Aluno teve um bom aproveitamento? (Sim ou Não);
+//Considere que a média para um bom aproveitamento é 7.0 ou acima;

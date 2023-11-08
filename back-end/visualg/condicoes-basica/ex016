@@ -2,21 +2,33 @@ Exercício 16) [DESAFIO] Escreva um programa para calcular a redução do tempo 
 
 R:
 
-algoritmo "TempoDeVidaFumante"
+algoritmo "VidaDe1Fumante"
 var
 
-
+     cigarro, anos: Inteiro
+     minutos_por_dia, anos_em_dias, total_minutos, dia_em_minutos, total_dias_perdidos: Real
 
 inicio
 
-
+      Escreval("Olá! Quantos cigarros você fuma por dia?")
+      Leia(cigarro)
+      Escreval("Já faz quantos anos que você fuma cigarro?")
+      Leia(anos)
+      
+      minutos_por_dia <- cigarro * 10
+      anos_em_dias <- anos * 365
+      total_minutos <- minutos_por_dia * anos_em_dias
+      dia_em_minutos <- 60 * 24
+      total_dias_perdidos <-  total_minutos / dia_em_minutos
+      
+      Escreval("Você perderá ", total_dias_perdidos:2, " dias de vida")
 
 fimalgoritmo
 
 //Quantos cigarros você fuma por dia?;
 //Quantos anos você já fumou?;
-//A cada 1 cigarro, ele perde 10m de vida;
-//Calcular quantos dias de vida o fumante perderá;
-//Mostrar o total de dias perdidos;
-
-Em andamento...
+//A cada 1 cigarro, ele perde 10m de vida (minutos por dia);
+//Calcular quantos dias de vida o fumante perderá (total dias perdidos);
+//Mostrar o total de dias perdidos (total dias perdidos);
+//A cada 1 ano são 365 dias (anos em dias);
+//A cada 1 dia são 1440 minutos [24hrs](dia em minutos);
