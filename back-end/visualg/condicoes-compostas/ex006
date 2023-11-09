@@ -1,0 +1,67 @@
+Exercício 06) Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar.
+ 
+ - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
+ - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento.
+
+ R:
+
+ algoritmo "AlistamentoMilitar"
+var
+
+ano_nasc, ano_atual, idade, anos_faltante, anos_depois: Inteiro
+
+
+inicio
+
+Escreva("Qual ano do seu nascimento: ")
+Leia(ano_nasc)
+Escreva("Informe o ano atual: ")
+Leia(ano_atual)
+
+idade <- ano_atual - ano_nasc
+anos_faltante <- 18 - idade
+anos_depois <- idade - 18
+
+Limpatela
+
+Se (idade < 18) entao
+
+   Escreval("-------------")
+   Escreval("   ATENÇÃO   ")
+   Escreval("-------------")
+   Escreval("Você não pode se alistar, faltam", anos_faltante, " anos")
+
+Senao
+
+   Se (idade > 18) entao
+
+      Escreval("Você já pode se alistar!")
+      Escreval("-------------")
+      Escreval("   ATENÇÃO   ")
+      Escreval("-------------")
+      Escreval("Já se passaram", anos_depois, " anos")
+
+   Senao
+   
+      Se (idade = 18) entao
+
+         Escreval("-------------")
+         Escreval("   ATENÇÃO   ")
+         Escreval("-------------")
+         Escreval("Sua idade é ", idade, " já pode se alistar")
+
+      FimSe
+
+   FimSe
+
+FimSe
+
+
+fimalgoritmo
+
+//Ano de Nascimento?;
+//18 anos é a idade mínima para se alistar;
+//Menos de 18 anos, ainda não pode se alistar;
+//Exebir a situação em relação ao alistamento;
+//Se for menor de 18, exiba quantos anos faltam;
+//Se for maior de 18, exbiba quanto tempo já passou;

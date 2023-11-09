@@ -1,0 +1,30 @@
+Exercício 05) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO.
+
+R:
+
+algoritmo "AnOBissexto"
+var
+
+ano: Inteiro
+bissexto: Real
+
+inicio
+
+Escreval("----------------")
+Escreval("   >BISSEXTO<   ")
+Escreval("----------------")
+Escreval("                ")
+Escreva("Informe um ano: ")
+Leia(ano)
+
+Se (ano % 4 = 0) entao
+   Escreval(ano, " é ano BISSEXTO")
+Senao
+   Escreval(ano, " não é ano BISSEXTO")
+FimSe
+
+fimalgoritmo
+
+//Ano bissexto (366 dias), esse 1 dia é adicionado no mês de fevereiro, por ser o mês com menos dias;
+//O Ano bissexto acontece de 4 em 4 anos;
+//Se o ano digitado pelo usuário for divido por 4, ele é bissexto, senão, ele não é;
