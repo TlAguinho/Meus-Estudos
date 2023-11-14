@@ -6,4 +6,34 @@ Exercício 01) Escreva um algoritmo que leia dois números inteiros e compare-os
 
  R:
 
- Em andamento...
+algoritmo "ComparandoNumbers"
+var
+
+   n1, n2: inteiro
+
+inicio
+
+      Escreval("-------------------")
+      Escreval("   COMPARANDO N°   ")
+      Escreval("-------------------")
+
+      Escreva("Qual o valor do 1° número: ")
+      Leia(n1)
+      Escreva("Qual o valor do 2° número: ")
+      Leia(n2)
+
+      Escreval("                          ")
+
+      Se (n1 > n2) entao
+         Escreval("O primeiro valor é maior!")
+      Senao
+           Se (n1 < n2) entao
+              Escreval("O segundo valor é maior!")
+           Senao
+                Se(n1 = n2) entao
+                      Escreval("Não existe valor maior, os dois são iguais!")
+                FimSe
+           FimSe
+      FimSe
+      
+fimalgoritmo
