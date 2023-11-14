@@ -1,0 +1,53 @@
+Exercício 07) Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. 
+Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que:
+
+- Homens ganham 5% de desconto;
+- Mulheres ganham 13% de desconto;
+
+R:
+
+algoritmo "DiaDaMulher"
+var
+
+nome, sexo: caractere
+gasto, desconto_h, desconto_m, desconto, total_m, total_h: real
+
+inicio
+
+Escreva("Qual seu nome: ")
+Leia(nome)
+Escreva("Qual seu sexo [M] ou [H]: ")
+Leia(sexo)
+Escreva("Qual valor da sua compra: ")
+Leia(gasto)
+
+desconto_h <- 0.05 * gasto
+desconto_m <- 0.13 * gasto
+total_m <- gasto - desconto_m
+total_h <- gasto - desconto_h
+
+Se (sexo = "M") entao
+   Escreval(nome, ", você com desconto R$", total_m:2:2)
+Senao
+   Se(sexo = "H") entao
+      Escreval(nome, ", você pagará com desconto R$", total_h:2:2)
+   FiMSe
+FimSe
+
+Escreval("Obrigado por comprar! Volte sempre.")
+
+
+fimalgoritmo
+
+
+//Perguntar nome do cliente/pessoa;
+//Perguntar o sexo da pessoa/cliente (homem ou mulher);
+//Perguntar o valor total gasto na loja;
+//Homem 5% de desconto (R$ 0,05);
+//Mulher 13% de desconto (R$ 0,13);
+
+Outro:
+
+//Primeiro, define as taxas de desconto para homens e mulheres.
+//Em seguida, solicita informações do cliente, como nome, sexo e valor das compras.
+//Depois, calcula o desconto usando a seguinte fórmula: Preço com desconto = Valor das compras - (desconto (H ou M) * gasto).

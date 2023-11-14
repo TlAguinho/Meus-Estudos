@@ -1,0 +1,35 @@
+Exercício 08) Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais longas.
+
+R:
+
+algoritmo "DistanciaEmKM"
+var
+
+preco_passagem_200, preco_passagem_mais, total_distancia_1, total_distancia_2, distancia, distancia_km: real
+
+inicio
+
+   preco_passagem_200 <- 0.50
+   preco_passagem_mais <- 0.45
+
+   Escreval("----------------------------------")
+   Escreval("           BUSÃO -(308)           ")
+   Escreval("----------------------------------")
+   Escreva("Qual distância vai percorrer hoje (KM): ")
+   Leia(distancia)
+   
+   distancia_km <- (distancia * 1000) / 1000
+   total_distancia_1 <- distancia_km * preco_passagem_200
+   total_distancia_2 <- distancia_km * preco_passagem_mais
+   
+   Se (distancia_km <= 200) entao
+      Escreval("Ao percorrer", distancia_km, "km você pagará R$ ", total_distancia_1:3:2)
+   Senao
+        Escreval("Ao percorrer", distancia_km, "km você pagará R$ ", total_distancia_2:3:2)
+   FimSe
+fimalgoritmo
+
+
+//Primeiro, definir preço da passagem;
+//Em seguida, solicitar informações ao cliente; (nome, sexo, distancia... etc)
+//Depois, calcular o preço da distância percorrida;

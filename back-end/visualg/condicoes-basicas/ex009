@@ -1,0 +1,34 @@
+Exercício 09) [DESAFIO] Crie um programa que leia o tamanho de três segmentos de reta. Analise seus comprimentos e diga se é possível formar um triângulo com essas retas. 
+Matematicamente, para três segmentos formarem um triângulo, o comprimento de cada lado deve ser menor que a soma dos outros dois
+
+R:
+
+algoritmo "Retas"
+var
+
+      R1, R2, R3, C1, C2: Inteiro
+
+inicio
+
+
+      Escreval("Qual o comprimento da primeira reta: ")
+      Leia(R1)
+      Escreval("Qual o comprimento da segunda reta: ")
+      Leia(R2)
+      Escreval("Qual o comprimento da terceira reta: ")
+      Leia(R3)
+      
+      C1 <- R2 + R3
+      C2 <- R3 + R1
+      
+      Se (R1 < C1) e (R2 < C2) entao
+         Escreva("É possível formar um triângulo!")
+      Senao
+         Escreval("Não é possível formar um triângulo!")
+      FimSe
+
+fimalgoritmo
+
+//Preciso de três retas;
+//Analisar o comprimento e ver se é possível formar um triangulo;
+//Matematicamente, para formar um triangulo, o comprimento de cada lado deve ser menor que cada lado;
