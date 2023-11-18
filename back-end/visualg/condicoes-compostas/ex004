@@ -1,0 +1,48 @@
+Exerício 4) Desenvolva um programa que leia o nome de um funcionário, seu salário, quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de acordo
+com a tabela a seguir:
+ 
+ - Até 3 anos de empresa: aumento de 3%
+ - entre 3 e 10 anos: aumento de 12.5%
+ - 10 anos ou mais: aumento de 20%
+
+ R:
+
+ algoritmo "Reajuste"
+var
+
+ nome: caractere
+ salario, anos, novo_salario: real
+
+inicio
+
+      Escreva("Qual o nome do funcionário: ")
+      Leia(nome)
+      Escreva("Qual o salário do funcionário: ")
+      Leia(salario)
+      Escreva("Quantos anos o funcionário está na empresa: ")
+      Leia(anos)
+      
+      Se (anos = 3) entao
+         novo_salario <- (salario / 100) * 3 + salario
+         Escreval("O novo salário do funcionário ", nome, " é R$: ", novo_salario:4:2)
+      Senao
+          Se(anos <= 10) entao
+               novo_salario <- (salario / 100) * 12.5 + salario
+               Escreval("O novo salário do funcionário ", nome, " é R$: ", novo_salario:4:2)
+          Senao
+               novo_salario <- (salario / 100) * 20 + salario
+               Escreval("O novo salário do funcionário ", nome, " é R$: ", novo_salario:4:2)
+          FimSe
+      FimSe
+
+fimalgoritmo
+
+
+//P. nome do funcionário;
+//P. salário;
+//P. quantos anos trabalha na empresa;
+//Exibir o novo salário;
+//Tabela de reajuste:
+// 3 anos = +3%
+// entre 3 a 10 anos = +12.5%
+// 10 ou mais anos = 20%
