@@ -1,0 +1,33 @@
+Exercício 05) [DESAFIO] Refaça o algoritmo do exercício 09 (condições básicas), acrescentando o recurso de mostrar que tipo de triângulo será formado:
+ 
+ - EQUILÁTERO: todos os lados iguais
+ - ISÓSCELES: dois lados iguais
+ - ESCALENO: todos os lados diferentes
+
+ R:
+
+ algoritmo "TrianguloFormado"
+var
+
+   l1, l2, l3: Inteiro
+
+inicio
+
+      Escreva("Qual o lado A: ")
+      Leia(l1)
+      Escreva("Qual o lado B: ")
+      Leia(l2)
+      Escreva("Qual o lado C: ")
+      Leia(l3)
+
+      Se (l1 = l2) e (l3 = l1) entao
+         Escreva("Triangulo EQUILÁTERO")
+      Senao
+          Se (l1 = l2) ou (l3 = l1) entao
+             Escreva("Triangulo ISÓSCELES")
+          Senao
+               Escreva("Triangulo ESCALENO")
+          FimSe
+      FimSe
+
+fimalgoritmo

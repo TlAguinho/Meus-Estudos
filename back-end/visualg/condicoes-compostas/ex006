@@ -1,0 +1,44 @@
+Exercício 06) [DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura)
+
+R:
+
+algoritmo "JoKenPo"
+var
+
+   jogador, computador: inteiro
+
+inicio
+
+      Escreval("[1] Papel")
+      Escreval("[2] Pedra")
+      Escreval("[3] Tesoura")
+      Escreval("Escolha sua jogada: ")
+      Leia(jogador)
+
+      //Jogada do computador
+      
+      Se (jogador = 1) entao
+         computador <- 2
+      Senao
+           Se (jogador = 2) entao
+              computador <- 1
+           Senao
+                Se (jogador = 3) entao
+                 computador <- 2
+                FimSe
+           FimSE
+      Fimse
+      
+      Se (jogador = 1) e (computador = 2) entao
+         Escreval("Vitória do JOGADOR!")
+      Senao
+         Se (jogador = 2) e (computador = 1) entao
+            Escreval("Vitória do COMPUTADOR!")
+         Senao
+              Se(jogador = 3) e (computador = 2) entao
+                 Escreval("Vitória do COMPUTADOR!")
+              FimSe
+         FimSe
+      FimSe
+
+fimalgoritmo

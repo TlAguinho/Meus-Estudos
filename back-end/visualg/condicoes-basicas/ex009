@@ -31,4 +31,4 @@ fimalgoritmo
 
 //Preciso de três retas;
 //Analisar o comprimento e ver se é possível formar um triangulo;
-//Matematicamente, para formar um triangulo, o comprimento de cada lado deve ser menor que cada lado;
+//Matematicamente, para formar um triangulo, o comprimento de cada lado deve ser menor que a soma dos outros dois lados;
