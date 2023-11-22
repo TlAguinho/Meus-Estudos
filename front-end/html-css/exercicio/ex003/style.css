@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.lista, .lista2, .lista3 {
+    list-style-position: inside;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.lista > li, .lista2 > li, .lista3 > li {
+    color: blueviolet;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
